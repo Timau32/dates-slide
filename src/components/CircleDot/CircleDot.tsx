@@ -1,20 +1,17 @@
-import React, { FC } from 'react'
-import { TimePeriod } from '../interfaces'
+import { FC } from 'react';
+import { TimePeriod } from '../../interfaces';
+
 interface Props {
     period: TimePeriod
     activePeriodIndex: number;
-
     index: number;
-    handlePeriodChange: (index: number) => void;
     angle: number;
     circeWidth: number;
 
-
+    handlePeriodChange: (index: number) => void;
 }
 
 const CircleDot: FC<Props> = ({ period, index, activePeriodIndex, handlePeriodChange, angle, circeWidth }) => {
-    // Calculate the full counter-rotation needed
-    // This is the dot's original angle plus the current rotation of the circle
     const counterRotation = -angle + ((360 / 6) * activePeriodIndex);
 
     return (

@@ -1,0 +1,16 @@
+$primary-blue: #6470e9;
+$primary-pink: #e9647c;
+$light-gray: #f4f5f9;
+$text-gray: #42567a;
+$border-color: rgba(66, 86, 122, 0.1);
+$circleWidth: 380px;
+$circleWidthNumber: 380;
+
+:export {
+  primaryBlue: $primary-blue;
+  primaryPink: $primary-pink;
+  lightGray: $light-gray;
+  textGray: $text-gray;
+  borderColor: $border-color;
+  circleWidth: $circleWidthNumber;
+}
